@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Mishel Torres">
+    <meta name="description" content="Portafolio de desarrollo web de Mishel Torres">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, GitHub">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Mishel Torres | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Sesion">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#registro">Regístrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#b">Buscar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#C">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Psychedelic Record.jpg" alt="Foto">
+        <h1>Bienvenido a Epic sound</h1>
+        <h2>¿Listo para escuchar?</h2>
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/Captura de pantalla 2024-07-19 064957.png" alt="imagen canciones">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mí" class="sobre-mí seccion-oscura">
+      <div class="contenedor">
+        <h3 class="seccion-titulo">¡Conócenos!</h3>
+        <p class="seccion-texto">Somos una tienda de música online que permite a usuarios descargar música para reproducirla en su dispositivo sin conexión WiFi.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Artistas -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artistas</p>
+            <p>Podrás encontrar artistas de cualquier género y época. </p>
+            <div class="badges-contenedor">
+              <span class="badge">Alex Turner</span>
+              <span class="badge">Peso Pluma</span>
+              <span class="badge">Gustavo Cerati</span>
+            </div>
+          </div>
+          <!-- Canciones -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Canciones</p>
+            <p>Podrás encontrar canciones de cualquier género y época. </p>
+            <div class="badges-contenedor">
+              <span class="badge">When the sun goes down</span>
+              <span class="badge">Belleza de cantina</span>
+              <span class="badge">Té para tres</span>
+            </div>
+          </div>
+          <!-- Albums -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Albums</p>
+            <p>Podrás encontrar Albums de cualquier género y época.</p>
+            <div class="badges-contenedor">
+              <span class="badge">AM</span>
+              <span class="badge">Honey Moon</span>
+              <span class="badge">Sangre Fría</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">¡Explora todo!</h2>
+      <h2<span class="badge">.</span></h2>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/foto1.png" alt="">
+              <div class="overlay">
+                <p>Podcast</p>
+                <div class="iconos-contenedor">
+                  <a href="https://open.spotify.com/genre/0JQ5DArNBzkmxXHCqFLx2J"_blank rel="noopener noreferrer">
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/foto2.png" alt="Nuevos lanzamientos">
+              <div class="overlay">
+                <p>Nuevos Lanzamientos</p>
+                <div class="iconos-contenedor">
+                  <a href="https://open.spotify.com/genre/0JQ5DArNBzkmxXHCqFLx2J" target="_blank" rel="noopener noreferrer">
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- Proyecto 3 -->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="Rankings">
+            <img src="imagenes/foto3.png" alt="Rankings">
+            <div class="overlay">
+              <p>Rankings</p>
+              <div class="iconos-contenedor">
+                <a href="https://open.spotify.com/genre/0JQ5DAB3zgCauRwnvdEQjJ" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/foto4.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Descubre</p>
+              <div class="iconos-contenedor">
+                <a href="https://open.spotify.com/genre/0JQ5DAtOnAEpjOgUKwXyxj" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/foto5.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Compositores</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/foto6.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Gaming</p>
+              <div class="iconos-contenedor">
+                <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCfObibaOZbv" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <a href= "https://github.com/Mishel-A-Torres" target="blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Más contenido
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Descubrimientos</h2>
+      <h4 class="seccion-descripcion">Estas son las novedades musicales de la semana</h4>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/foto1.1.jpg" alt="Foto">
+              <p class="testimonio-texto">Album: El último baile.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Costo: $140 </p>
+                <p class="cargo">Autor: Trueno</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/foto2.1.jpg" alt="Foto ">
+              <p class="testimonio-texto">Canción: Aishite Aishite Aishite.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Costo: $25 </p>
+                <p class="cargo">Autor: Ado</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/foto3.1.jpg" alt="Foto">
+              <p class="testimonio-texto">Artista: Joji</p>
+              <div class="testimonio-info">
+                <p class="cliente">Encuentra toda la discografía</p>
+                <p class="cargo">Con un 15% de descuento en todos los albums.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+              Unete a este mundo de melodías.
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactanos para formar parte de nuestro equipo.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:tovimish@icloud.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Descubre la magia en cada acorde. :D
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.linkedin.com/in/mishel-torres-villalobos-26b180271" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/ale.torr3s._?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mail to:tovimish@icloud.com " target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Mishel Torres y Josué Villalobos EPIC SOUND(2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
